@@ -1,0 +1,26 @@
+/*Based on Argon core portraitHUD.css, changes to the weapon sets to make them single buttons*/
+.extended-combat-hud .portrait-hud .portrait-hud-image.pokerole-portrait-fix {
+    background-size: contain; 
+    background-position: center center ;
+}
+
+.pokerole-fix-drawer.ability-menu{
+    bottom: 420px;
+}
+
+.resource-magic {
+    position: absolute; 
+    left: 0; 
+    bottom: 374px; 
+    width: 100%; 
+    height: 47px;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--ech-portrait-base-background);
+    border: 1px solid var(--ech-portrait-base-border);
+}
+
+.extended-combat-hud .action-hud .action-element-container .action-element.spend-item {
+    color: black;
+    background-color: #4b4a4acc;
+}
