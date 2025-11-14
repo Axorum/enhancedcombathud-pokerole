@@ -1,6 +1,7 @@
 {
   "id": "enhancedcombathud-pokerole",
   "title": "Argon - Combat HUD (Pokerole)",
+  "description": "Add-On for the Argon Enhanced Combat Hud for the POKEROLE system.",
   "version": "0.9.0",
   "compatibility": {
     "minimum": "13",
@@ -39,5 +40,9 @@
   "flags": {
     "canUpload": true
   },
-  "description": "Add-On for the Argon Enhanced Combat Hud for the POKEROLE system."
+  "url": "https://github.com/Axorum/enhancedcombathud-pokerole",
+  "download": "",
+  "manifest": "https://github.com/Axorum/enhancedcombathud-pokerole/blob/main/module.json",
+  "readme": "https://github.com/Axorum/enhancedcombathud-pokerole/blob/main/README.md",
+  "changelog": ""
 }
