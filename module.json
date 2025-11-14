@@ -41,8 +41,8 @@
     "canUpload": true
   },
   "url": "https://github.com/Axorum/enhancedcombathud-pokerole",
-  "download": "",
-  "manifest": "https://github.com/Axorum/enhancedcombathud-pokerole/blob/main/module.json",
+  "download": "https://github.com/Axorum/enhancedcombathud-pokerole/releases/download/v0.9.0/enhancedcombathud-pokerole-v0.9.0.zip",
+  "manifest": "https://raw.githubusercontent.com/Axorum/enhancedcombathud-pokerole/blob/main/module.json",
   "readme": "https://github.com/Axorum/enhancedcombathud-pokerole/blob/main/README.md",
   "changelog": ""
 }
