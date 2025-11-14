@@ -1,7 +1,7 @@
 {
   "id": "enhancedcombathud-pokerole",
   "title": "Argon - Combat HUD (Pokerole)",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13",
