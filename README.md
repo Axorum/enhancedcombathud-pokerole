@@ -1,6 +1,8 @@
 # Argon-Pokerole
 An implementation of the [Argon - Combat HUD](https://foundryvtt.com/packages/enhancedcombathud) (by [TheRipper93](https://theripper93.com/) and [Mouse0270](https://github.com/mouse0270)) for the [Pokerole] system. The Argon Combat HUD (CORE) module is required for this module to work.
 
+You can add this sub-module with the following link: [https://raw.githubusercontent.com/Axorum/enhancedcombathud-pokerole/refs/heads/main/module.json]
+
 <sup>All icon included in this project are from [Game-icons.net](game-icons.net), used under the [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/) license</sup>
 
 ### The documentation for the core argon features can be found [here](https://api.theripper93.com/modulewiki/enhancedcombathud/free)
