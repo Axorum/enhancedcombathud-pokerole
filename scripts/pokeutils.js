@@ -146,20 +146,10 @@ async function GETmoveTooltip(actor, move) {
         )
     }
 
-    if (move.system.attributes.reactionMove != 0 && move.system.attributes.reactionMove) {
+    if (move.system.attributes.priority != 0 && move.system.attributes.priority) {
         properties.push(
             {
-                label: "Reaction " + move.system.attributes.reactionMove,
-                isPrimary: true,
-                color: "blue"
-            }
-        )
-    }
-
-    if (move.system.attributes.lateReactionMove != 0 && move.system.attributes.lateReactionMove) {
-        properties.push(
-            {
-                label: "Late Reaction " + move.system.attributes.lateReactionMove,
+                label: "Priority " + move.system.attributes.priority,
                 isPrimary: true,
                 color: "blue"
             }
@@ -190,16 +180,6 @@ async function GETmoveTooltip(actor, move) {
         properties.push(
             {
                 label: "High Critical",
-                isPrimary: false,
-                color: "green"
-            }
-        )
-    }
-
-    if (move.system.attributes.alwaysCrit) {
-        properties.push(
-            {
-                label: "Always Critical",
                 isPrimary: false,
                 color: "green"
             }
@@ -260,46 +240,6 @@ async function GETmoveTooltip(actor, move) {
         properties.push(
             {
                 label: "Sound Move",
-                isPrimary: false,
-                color: "orange"
-            }
-        )
-    }
-
-    if (move.system.attributes.cutterMove) {
-        properties.push(
-            {
-                label: "Cutter Move",
-                isPrimary: false,
-                color: "orange"
-            }
-        )
-    }
-
-    if (move.system.attributes.windMove) {
-        properties.push(
-            {
-                label: "Wind Move",
-                isPrimary: false,
-                color: "orange"
-            }
-        )
-    }
-
-    if (move.system.attributes.biteMove) {
-        properties.push(
-            {
-                label: "Bite Move",
-                isPrimary: false,
-                color: "orange"
-            }
-        )
-    }
-
-    if (move.system.attributes.powderMove) {
-        properties.push(
-            {
-                label: "Powder Move",
                 isPrimary: false,
                 color: "orange"
             }

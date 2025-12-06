@@ -135,6 +135,7 @@ Hooks.on("argonInit", (CoreHUD) => {
             for (let symbol of types) {
                 let typesymbol = document.createElement("div");
                 typesymbol.style = `background-image: url(systems/pokerole/images/types/${symbol}.svg);width: 60px;height: 60px;`
+                typesymbol.setAttribute("title",`${symbol}`)
                 typecontainer.appendChild(typesymbol)
             }
 
@@ -193,7 +194,7 @@ Hooks.on("argonInit", (CoreHUD) => {
             const attributesButtons = Object.keys(attributes).map((attribute) => {
 				
 				let valuelabel = this.actor.getAnyAttribute(attribute).value;
-				let attributename = game.i18n.localize(POKEROLE.i18n.attributes[attribute]);
+				let attributename = game.i18n.localize(POKEROLE.i18n.attributes[attribute] ?? attribute);
 				return new POKEROLEDrawerButton([
 					{
 						label: `${attributename}`,
@@ -236,7 +237,7 @@ Hooks.on("argonInit", (CoreHUD) => {
             const skillsButtons = Object.keys(skills).map((skill) => {
                 const skillData = skills[skill];
                 let value = this.actor.getSkill(skill).value;
-                let skillname = game.i18n.localize(POKEROLE.i18n.skills[skill]);
+                let skillname = game.i18n.localize(POKEROLE.i18n.skills[skill] ?? skill);
                 return new POKEROLEDrawerButton(
                     [
                         {
@@ -280,7 +281,7 @@ Hooks.on("argonInit", (CoreHUD) => {
 
             const derivedButtons = Object.keys(derivedmod).map((derived) => {
                 let valuelabel = this.actor.getAnyAttribute(derived).value;
-                let derivedname = game.i18n.localize(POKEROLE.i18n.derived[derived]);
+                let derivedname = game.i18n.localize(POKEROLE.i18n.derived[derived] ?? derived);
                 return new POKEROLEDrawerButton(
                     [
                         {
@@ -743,7 +744,9 @@ Hooks.on("argonInit", (CoreHUD) => {
             return [
                 {
                     label: "Action +",
-                    onClick: (event) => (this.actor.increaseActionCount()),
+                    onClick: (event) => (
+                        this.actor.increaseActionCount()
+                    ),
                     icon: "fas fa-plus",
                     color: "white"
                 },
