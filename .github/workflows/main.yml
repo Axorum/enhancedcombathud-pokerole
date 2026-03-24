@@ -1,0 +1,26 @@
+name: Mi Practica de CI
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  mi-tarea-de-prueba:
+    runs-on: ubuntu-latest # El sistema operativo del robot
+
+    steps:
+      - name: Descargar el código del repo
+        uses: actions/checkout@v4 # Acción oficial para "clonar" tu propio repo
+
+      - name: Saludar al sistema
+        run: echo "Hola, el proceso de CI ha comenzado correctamente."
+
+      - name: Simular instalación
+        run: |
+          echo "Instalando dependencias imaginarias..."
+          sleep 2
+          echo "Todo listo."
+
+      - name: Simular Test
+        run: echo "Ejecutando tests... ¡Pasaron al 100%! ✅"
