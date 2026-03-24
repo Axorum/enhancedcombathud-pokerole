@@ -266,6 +266,16 @@ async function GETmoveTooltip(actor, move) {
         )
     }
 
+    if (move.system.attributes.alwaysCrit) {
+        properties.push(
+            {
+                label: "Always Crit",
+                isPrimary: false,
+                color: "grey"
+            }
+        )
+    }
+
     // Moves Added Effects into Properties
 
     for (const effects of move.system.effectGroups){
